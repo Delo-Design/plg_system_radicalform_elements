@@ -20,6 +20,7 @@
 
 	<files>
 		<folder>language</folder>
+		<folder>elements</folder>
 		<filename plugin="yoohikaform">bootstrap.php</filename>
 		<filename plugin="yoohikaform">yoohikaform.php</filename>
 	</files>
