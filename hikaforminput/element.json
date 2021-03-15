@@ -1,0 +1,134 @@
+{
+    "name": "hikaforminput",
+    "title": "Hika Input",
+    "group": "Forms",
+    "icon": "${url:images/icon.svg}",
+    "iconSmall": "${url:images/iconSmall.svg}",
+    "element": true,
+    "container": true,
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "fields": {
+        "label": {
+            "label": "Label",
+            "type": "text"
+        },
+        "input_type": {
+            "label": "Type",
+            "type": "select",
+            "default": "text",
+            "options": {
+                "Text": "text",
+                "Email": "email",
+                "Phone": "tel",
+                "password": "password"
+            }
+        },
+        "input_placeholder": {
+            "label": "Placeholder",
+            "type": "text"
+        },
+        "input_name": {
+            "label": "Name in form",
+            "type": "text"
+        },
+        "input_required": {
+            "label": "Required",
+            "type": "checkbox",
+            "text": "Input required?"
+        },
+        "icon": {
+            "label": "Icon",
+            "description": "Pick an optional icon.",
+            "type": "icon",
+            "source": true
+        },
+        "icon_align": {
+            "label": "Icon Alignment",
+            "description": "Choose the icon position.",
+            "type": "select",
+            "options": {
+                "Left": "left",
+                "Right": "right"
+            },
+            "enable": "icon"
+        },
+        "input_size": {
+            "label": "Size",
+            "type": "select",
+            "options": {
+                "Small": "small",
+                "Default": "",
+                "Large": "large"
+            }
+        },
+        "input_css": {
+            "label": "Css classes",
+            "type": "text"
+        },
+        "input_pattern": {
+            "label": "Pattern",
+            "type": "text"
+        },
+        "margin": "${builder.margin}",
+        "margin_remove_top": "${builder.margin_remove_top}",
+        "margin_remove_bottom": "${builder.margin_remove_bottom}",
+        "name": "${builder.name}",
+        "status": "${builder.status}",
+        "id": "${builder.id}",
+        "class": "${builder.cls}",
+        "attributes": "${builder.attrs}",
+        "css": {
+            "label": "CSS",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.hika-input</code>",
+            "type": "editor",
+            "editor": "code",
+            "mode": "css",
+            "attrs": {
+                "debounce": 500
+            }
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+                        {
+                            "label": "Input",
+                            "type": "group",
+                            "divider": true,
+                            "fields": [
+                                "label",
+                                "input_type",
+                                "input_placeholder",
+                                "input_name",
+                                "input_required",
+                                "icon",
+                                "icon_align",
+                                "input_size",
+                                "input_css",
+                                "input_pattern"
+                            ]
+                        },
+                        {
+                            "label": "General",
+                            "type": "group",
+                            "fields": [
+                                "margin",
+                                "margin_remove_top",
+                                "margin_remove_bottom"
+                            ]
+                        }
+                    ]
+                },
+                "${builder.advanced}"
+            ]
+        }
+    }
+}
