@@ -3,7 +3,7 @@
 use Joomla\CMS\Factory;
 use Joomla\CMS\Installer\InstallerAdapter;
 
-class plgSystemYoohikaloaderInstallerScript
+class plgSystemRadicalform_elementsInstallerScript
 {
     /**
      * Runs right after any installation action.

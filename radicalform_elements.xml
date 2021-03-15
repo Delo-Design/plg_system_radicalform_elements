@@ -12,17 +12,17 @@
 	<scriptfile>script.php</scriptfile>
 
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.plg_system_yoohikaform.ini</language>
-		<language tag="en-GB">en-GB/en-GB.plg_system_yoohikaform.sys.ini</language>
-		<language tag="ru-RU">ru-RU/ru-RU.plg_system_yoohikaform.ini</language>
-		<language tag="ru-RU">ru-RU/ru-RU.plg_system_yoohikaform.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_radicalform_elements.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_radicalform_elements.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_radicalform_elements.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_radicalform_elements.sys.ini</language>
 	</languages>
 
 	<files>
 		<folder>language</folder>
 		<folder>elements</folder>
-		<filename plugin="yoohikaform">bootstrap.php</filename>
-		<filename plugin="yoohikaform">yoohikaform.php</filename>
+		<filename plugin="radicalform_elements">bootstrap.php</filename>
+		<filename plugin="radicalform_elements">radicalform_elements.php</filename>
 	</files>
 
 </extension>
