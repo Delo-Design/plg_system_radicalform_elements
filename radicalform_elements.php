@@ -3,7 +3,7 @@
 use Joomla\CMS\Plugin\CMSPlugin;
 use YOOtheme\Application;
 
-class plgSystemYoohikaform extends CMSPlugin
+class plgSystemRadicalform_elements extends CMSPlugin
 {
 
 
