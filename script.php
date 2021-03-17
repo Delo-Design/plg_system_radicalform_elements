@@ -13,6 +13,11 @@ class plgSystemRadicalform_elementsInstallerScript
      *
      * @since  1.1.0
      */
+
+    protected $minimumPHPVersion = '7.0.0';
+    protected $minimumJoomlaVersion = '3.9.0';
+    protected $minimumYOOthemeVersion = '2.4.0';
+
     function postflight($type, $parent)
     {
         // Enable plugin
@@ -22,6 +27,38 @@ class plgSystemRadicalform_elementsInstallerScript
         }
     }
 
+    public function preflight($type, $parent)
+    {
+        // Check the minimum PHP version
+        if (!version_compare(PHP_VERSION, $this->minimumPHPVersion, 'ge'))
+        {
+            $msg = '<p>You need PHP ' . $this->minimumPHPVersion . ' or later to install this plugin.</p>';
+            JLog::add($msg, JLog::WARNING, 'jerror');
+
+            return false;
+        }
+
+        // Check the minimum Joomla! version
+        if (!version_compare(JVERSION, $this->minimumJoomlaVersion, 'ge'))
+        {
+            $msg = '<p>You need Joomla! ' . $this->minimumJoomlaVersion . ' or later to install this plugin.</p>';
+            JLog::add($msg, JLog::WARNING, 'jerror');
+
+            return false;
+        }
+
+        // Check the minimum YOOtheme Pro version
+        $yoothemeManifest = simplexml_load_file(JPATH_SITE . '/templates/yootheme/templateDetails.xml');
+        if (!$yoothemeManifest or !version_compare((string) $yoothemeManifest->version, $this->minimumYOOthemeVersion, 'ge'))
+        {
+            $msg = '<p>You need YOOtheme Pro ' . $this->minimumYOOthemeVersion . ' or later to install this plugin.</p>';
+            JLog::add($msg, JLog::WARNING, 'jerror');
+
+            return false;
+        }
+
+        return true;
+    }
 
     /**
      * Enable plugin after installation.

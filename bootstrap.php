@@ -1,5 +1,8 @@
 <?php
 
+// No direct access to this file
+defined('_JEXEC') or die();
+
 use YOOtheme\Builder;
 use YOOtheme\Path;
 
