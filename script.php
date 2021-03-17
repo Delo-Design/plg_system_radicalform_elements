@@ -16,7 +16,7 @@ class plgSystemRadicalform_elementsInstallerScript
 
     protected $minimumPHPVersion = '7.0.0';
     protected $minimumJoomlaVersion = '3.9.0';
-    protected $minimumYOOthemeVersion = '2.4.0';
+    protected $minimumYOOthemeVersion = '2.2.0';
 
     function postflight($type, $parent)
     {
