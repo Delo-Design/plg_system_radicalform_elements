@@ -5,16 +5,24 @@ $el = $this->el('div', [
         'hika-input'
     ]
 ]);
-
+if(empty($props['field_name']))
+{
+    $name="name".str_replace(["#","-","page"],"",$id);
+}
+else
+{
+    $name=$props['field_name'];
+}
 $input_attrs = [
-    'id' => 'input-' . $attrs['data-id'],
+    'id' => !empty($props['data-id']) ? $props['data-id'] : '',
+
     'type' => $props['input_type'],
     'class' => $this->expr([
         'uk-input',
         '[uk-form-{input_size}]' => ['input_size' => $props['input_size']],
         !empty($props['input_css']) ? $props['input_css'] : ''
     ]),
-    'name' => $props['input_name'],
+    'name' => $name,
     'placeholder' => $props['input_placeholder']
 ];
 

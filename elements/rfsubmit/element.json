@@ -1,6 +1,6 @@
 {
     "name": "rfsubmit",
-    "title": "RF submit",
+    "title": "RF Submit",
     "group": "RadicalForm Elements",
     "icon": "${url:images/icon.svg}",
     "iconSmall": "${url:images/iconSmall.svg}",
@@ -10,6 +10,11 @@
     "templates": {
         "render": "./templates/template.php",
         "content": "./templates/content.php"
+    },
+    "defaults": {
+        "margin": "default",
+        "label":  "Submit",
+        "button_style": "default"
     },
     "fields": {
         "label": {

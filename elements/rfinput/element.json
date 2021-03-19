@@ -11,6 +11,10 @@
         "render": "./templates/template.php",
         "content": "./templates/content.php"
     },
+    "defaults": {
+        "margin": "default"
+    },
+
     "fields": {
         "label": {
             "label": "Label",
@@ -31,14 +35,14 @@
             "label": "Placeholder",
             "type": "text"
         },
-        "input_name": {
-            "label": "Name in form",
+        "field_name": {
+            "label": "Field name",
             "type": "text"
         },
         "input_required": {
             "label": "Required",
             "type": "checkbox",
-            "text": "Input required?"
+            "text": "Set as required"
         },
         "icon": {
             "label": "Icon",
@@ -107,7 +111,7 @@
                                 "label",
                                 "input_type",
                                 "input_placeholder",
-                                "input_name",
+                                "field_name",
                                 "input_required",
                                 "icon",
                                 "icon_align",
