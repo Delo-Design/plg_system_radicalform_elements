@@ -1,0 +1,91 @@
+{
+    "name": "rfformtextarea",
+    "title": "RF textarea",
+    "group": "RadicalForm Elements",
+    "icon": "${url:images/icon.svg}",
+    "iconSmall": "${url:images/iconSmall.svg}",
+    "element": true,
+    "container": true,
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "defaults": {
+        "margin": "default"
+    },
+    "fields": {
+        "label": {
+            "label": "Textarea label",
+            "type": "text"
+        },
+        "inputplaceholder": {
+            "label": "Textarea placeholder",
+            "type": "text"
+        },
+        "field_name": {
+            "label": "Textarea name",
+            "type": "text"
+        },
+        "inputrows": {
+            "label": "Textarea rows",
+            "type": "text"
+        },
+        "inputcss": {
+            "label": "Textarea css",
+            "type": "text"
+        },
+        "margin": "${builder.margin}",
+        "margin_remove_top": "${builder.margin_remove_top}",
+        "margin_remove_bottom": "${builder.margin_remove_bottom}",
+        "name": "${builder.name}",
+        "status": "${builder.status}",
+        "id": "${builder.id}",
+        "class": "${builder.cls}",
+        "attributes": "${builder.attrs}",
+        "css": {
+            "label": "CSS",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.el-item</code>, <code>.el-title</code>, <code>.el-content</code>, <code>.el-image</code>, <code>.el-link</code>",
+            "type": "editor",
+            "editor": "code",
+            "mode": "css",
+            "attrs": {
+                "debounce": 500
+            }
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+                        {
+                            "label": "Textarea",
+                            "type": "group",
+                            "divider": true,
+                            "fields": [
+                                "label",
+                                "inputplaceholder",
+                                "field_name",
+                                "inputrows",
+                                "inputcss"
+                            ]
+                        },
+                        {
+                            "label": "General",
+                            "type": "group",
+                            "fields": [
+                                "margin",
+                                "margin_remove_top",
+                                "margin_remove_bottom"
+                            ]
+                        }
+                    ]
+                },
+                "${builder.advanced}"
+            ]
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "name": "rfhiddeninput",
+    "title": "RF hidden input",
+    "group": "RadicalForm Elements",
+    "icon": "${url:images/icon.svg}",
+    "iconSmall": "${url:images/iconSmall.svg}",
+    "element": true,
+    "container": true,
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "fields": {
+        "inputname": {
+            "label": "Input name",
+            "type": "text"
+        },
+        "inputvalue": {
+            "label": "Input value",
+            "type": "text"
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+                        "inputname",
+                        "inputvalue"
+                    ]
+                }
+            ]
+        }
+    }
+}

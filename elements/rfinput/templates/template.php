@@ -2,7 +2,7 @@
 
 $el = $this->el('div', [
     'class' => [
-        'hika-input'
+        'rf-input'
     ]
 ]);
 if(empty($props['field_name']))
