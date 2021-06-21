@@ -1,0 +1,38 @@
+{
+    "name": "rfformcheckboxes_item",
+    "title": "Checkbox item",
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "fields": {
+        "label": {
+            "label": "Label",
+            "type": "text"
+        },
+        "value": {
+            "label": "Value",
+            "type": "Text"
+        },
+        "css_classes": {
+            "label": "CSS classes",
+            "type": "Text"
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "General",
+                    "fields": [
+                        "label",
+                        "value",
+                        "css_classes"
+                    ]
+                }
+            ]
+        }
+    }
+}
