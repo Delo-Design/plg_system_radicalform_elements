@@ -1,6 +1,6 @@
 {
-    "name": "rfformcheckboxes",
-    "title": "RF Checkboxes",
+    "name": "rfformradio",
+    "title": "RF Radio",
     "group": "RadicalForm Elements",
     "icon": "${url:images/icon.svg}",
     "iconSmall": "${url:images/iconSmall.svg}",
@@ -15,24 +15,24 @@
         "margin": "default"
     },
     "fields": {
-        "checkboxes": {
-            "label": "Checkboxes",
+        "radios": {
+            "label": "Radio",
             "type": "content-items",
             "title": "label",
-            "item": "rfformcheckboxes_item"
+            "item": "rfformradio_item"
         },
         "label": {
-            "label": "Checkbox label",
+            "label": "Radio label",
             "type": "text"
         },
         "field_name": {
-            "label": "Checkbox name",
+            "label": "Radio name",
             "type": "text"
         },
         "linebreak": {
             "label": "Set to one line",
             "type": "checkbox",
-            "text": "Set all checkboxes in one line."
+            "text": "Set all radio buttons in one line."
         },
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
@@ -60,14 +60,14 @@
                 {
                     "title": "Content",
                     "fields": [
-                        "checkboxes"
+                        "radios"
                     ]
                 },
                 {
                     "title": "General",
                     "fields": [
                         {
-                            "label": "Checkbox",
+                            "label": "Radio",
                             "type": "group",
                             "divider": true,
                             "fields": [

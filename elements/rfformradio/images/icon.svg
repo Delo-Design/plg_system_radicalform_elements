@@ -1,0 +1,11 @@
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <rect x="10" y="4" width="18" height="2"/>
+        <rect x="10" y="13" width="18" height="2"/>
+        <rect x="10" y="23" width="18" height="2"/>
+        <circle cx="4" cy="5" r="3"/>
+        <path d="M4,2C5.656,2 7,3.344 7,5C7,6.656 5.656,8 4,8C2.344,8 1,6.656 1,5C1,3.344 2.344,2 4,2ZM4,3C5.104,3 6,3.896 6,5C6,6.104 5.104,7 4,7C2.896,7 2,6.104 2,5C2,3.896 2.896,3 4,3Z"/>
+        <path d="M4,11C5.656,11 7,12.344 7,14C7,15.656 5.656,17 4,17C2.344,17 1,15.656 1,14C1,12.344 2.344,11 4,11ZM4,12C5.104,12 6,12.896 6,14C6,15.104 5.104,16 4,16C2.896,16 2,15.104 2,14C2,12.896 2.896,12 4,12Z"/>
+        <path d="M4,21C5.656,21 7,22.344 7,24C7,25.656 5.656,27 4,27C2.344,27 1,25.656 1,24C1,22.344 2.344,21 4,21ZM4,22C5.104,22 6,22.896 6,24C6,25.104 5.104,26 4,26C2.896,26 2,25.104 2,24C2,22.896 2.896,22 4,22Z"/>
+    </g>
+</svg>
