@@ -14,6 +14,14 @@
     "defaults": {
         "margin": "default"
     },
+    "placeholder": {
+        "children": [
+            {"type": "rfformcheckboxes_item", "props": {"label": "Option 1", "value": "option-1"}},
+            {"type": "rfformcheckboxes_item", "props": {"label": "Option 2", "value": "option-2"}},
+            {"type": "rfformcheckboxes_item", "props": {"label": "Option 3", "value": "option-3"}}
+        ]
+    },
+
     "fields": {
         "checkboxes": {
             "label": "Checkboxes",

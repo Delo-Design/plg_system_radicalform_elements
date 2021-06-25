@@ -13,9 +13,7 @@ $button = $this->el('button', [
         'uk-{button_style: link-\w+}' => ['button_style' => $props['button_style']],
         'uk-button uk-button-{!button_style: |link-\w+} [uk-button-{button_size}]' => ['button_style' => $props['button_style']],
     ], $props),
-
     'title' => ['{label}'],
-
 ]);
 if(empty($props['field_name']))
 {
