@@ -1,0 +1,104 @@
+{
+    "name": "rfformselect",
+    "title": "RF Select",
+    "group": "RadicalForm Elements",
+    "icon": "${url:images/icon.svg}",
+    "iconSmall": "${url:images/iconSmall.svg}",
+    "element": true,
+    "container": true,
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "defaults": {
+        "margin": "default"
+    },
+    "fields": {
+        "select": {
+            "label": "Select",
+            "type": "content-items",
+            "title": "label",
+            "item": "rfformselect_item"
+        },
+        "label": {
+            "label": "Select label",
+            "type": "text"
+        },
+        "field_name": {
+            "label": "Select name",
+            "type": "text"
+        },
+        "multiple": {
+            "label": "Multiple selection",
+            "type": "checkbox",
+            "text": "Allow multiple selection"
+        },
+        "control_size": {
+            "label": "Size",
+            "type": "select",
+            "options": {
+                "Small": "uk-form-small",
+                "Default": "",
+                "Large": "uk-form-large"
+            }
+        },
+        "margin": "${builder.margin}",
+        "margin_remove_top": "${builder.margin_remove_top}",
+        "margin_remove_bottom": "${builder.margin_remove_bottom}",
+        "name": "${builder.name}",
+        "status": "${builder.status}",
+        "id": "${builder.id}",
+        "class": "${builder.cls}",
+        "attributes": "${builder.attrs}",
+        "css": {
+            "label": "CSS",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.el-item</code>, <code>.el-title</code>, <code>.el-content</code>, <code>.el-image</code>, <code>.el-link</code>",
+            "type": "editor",
+            "editor": "code",
+            "mode": "css",
+            "attrs": {
+                "debounce": 500
+            }
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+                        "select"
+                    ]
+                },
+                {
+                    "title": "General",
+                    "fields": [
+                        {
+                            "label": "Radio",
+                            "type": "group",
+                            "divider": true,
+                            "fields": [
+                                "label",
+                                "field_name",
+                                "multiple",
+                                "control_size"
+                            ]
+                        },
+                        {
+                            "label": "General",
+                            "type": "group",
+                            "fields": [
+                                "margin",
+                                "margin_remove_top",
+                                "margin_remove_bottom"
+                            ]
+                        }
+                    ]
+                },
+                "${builder.advanced}"
+            ]
+        }
+    }
+}
