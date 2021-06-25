@@ -1,6 +1,8 @@
-<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-    <rect x="1" y="4" width="28" height="22" stroke="#444" style="fill:none;stroke-width:2px;"/>
-    <path d="M26.999,19.294L22.318,23.976L26.999,19.294Z" stroke="#444" style="fill:none;stroke-width:1px;"/>
-    <path d="M27.231,21.886L24.873,24.245L27.231,21.886Z" stroke="#444" style="fill:none;stroke-width:1px;"/>
-    <path d="M3.924,5.813l0,8.374l0,-8.374Z" stroke="#444" style="stroke: #444;fill:none;stroke-width:2px;"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <path d="M30,3L-0,3L-0,27L30,27L30,3ZM28,5L28,25C28,25 2,25 2,25C2,25 2,5 2,5L28,5Z"/>
+    <rect x="4" y="7" width="2" height="9"/>
+    <path d="M26.682,19L22,23.682L26.682,19Z" style="fill:none;stroke:rgb(68,68,68);stroke-width:1px;"/>
+    <path d="M26.914,21.592L24.555,23.95L26.914,21.592Z" style="fill:none;stroke:rgb(68,68,68);stroke-width:1px;"/>
 </svg>
