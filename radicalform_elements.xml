@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.8" type="plugin" method="upgrade" group="system">
-	<name>PLG_YOOHIKAFORM</name>
+	<name>PLG_RFE_FORM</name>
 	<author>Tsymbal and Progreccor</author>
-	<creationDate>17.03.2021</creationDate>
+	<creationDate>26.06.2021</creationDate>
 	<copyright>Copyright (C) 2005 - 2021 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>boss@delo-design.ru</authorEmail>
 	<authorUrl>https://delo-design.ru</authorUrl>
 	<version>1.0.0</version>
-	<description>PLG_YOOHIKAFORM_XML_DESCRIPTION</description>
+	<description>PLG_RFE_FORM_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 
 	<languages folder="language">
