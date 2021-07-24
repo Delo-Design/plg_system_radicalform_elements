@@ -39,6 +39,10 @@
             "label": "Field name",
             "type": "text"
         },
+        "field_id": {
+            "label": "Field ID",
+            "type": "text"
+        },
         "input_required": {
             "label": "Required",
             "type": "checkbox",
@@ -70,13 +74,14 @@
             }
         },
         "input_css": {
-            "label": "Css classes",
+            "label": "Css classes for input",
             "type": "text"
         },
         "input_pattern": {
             "label": "Pattern",
             "type": "text"
         },
+        "attrs": "${builder.attrs}",
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
         "margin_remove_bottom": "${builder.margin_remove_bottom}",
@@ -87,7 +92,7 @@
         "attributes": "${builder.attrs}",
         "css": {
             "label": "CSS",
-            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.hika-input</code>",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.rf-input</code>, <code>.rf-label</code>",
             "type": "editor",
             "editor": "code",
             "mode": "css",
@@ -112,12 +117,22 @@
                                 "input_type",
                                 "input_placeholder",
                                 "field_name",
+                                "field_id",
                                 "input_required",
                                 "icon",
                                 "icon_align",
                                 "input_size",
                                 "input_css",
                                 "input_pattern"
+                            ]
+                        },
+                        {
+                            "label": "Attributes for input",
+                            "type": "grid",
+                            "width": "1-1",
+                            "divider": true,
+                            "fields": [
+                                "attrs"
                             ]
                         },
                         {

@@ -1,10 +1,6 @@
 <?php
 
-$el = $this->el('div', [
-    'class' => [
-        'rf-input'
-    ]
-]);
+$el = $this->el('div');
 if(empty($props['field_name']))
 {
     $name="name".str_replace(["#","-","page"],"",$id);
@@ -14,11 +10,12 @@ else
     $name=$props['field_name'];
 }
 $input_attrs = [
-    'id' => !empty($props['data-id']) ? $props['data-id'] : '',
+    'id' => !empty($props['field_id']) ? $props['field_id'] : '',
 
     'type' => $props['input_type'],
     'class' => $this->expr([
         'uk-input',
+        'rf-input',
         '[uk-form-{input_size}]' => ['input_size' => $props['input_size']],
         !empty($props['input_css']) ? $props['input_css'] : ''
     ]),
@@ -28,7 +25,7 @@ $input_attrs = [
 
 if($props['input_required'])
 {
-    $input_attrs['required'] = 'required';
+    $input_attrs['required'] = true;
 }
 
 if(!empty($props['input_pattern']))
@@ -36,12 +33,35 @@ if(!empty($props['input_pattern']))
     $input_attrs['pattern'] = $props['input_pattern'];
 }
 
+if(!empty($props['attrs']))
+{
+    $dim=explode("\n", $props['attrs']);
+    foreach ($dim as $dimElement)
+    {
+        $dimExplodedElement = explode("=", $dimElement);
+        if(count($dimExplodedElement)>1)
+        {
+            if (trim(str_replace(array("'",'"'),'',$dimExplodedElement[1]))=="")
+            {
+                $input_attrs[$dimExplodedElement[0]]= true;
+            }
+            else
+            {
+                $input_attrs[$dimExplodedElement[0]] = str_replace(array("'",'"'),'',$dimExplodedElement[1]);
+            }
+        }
+        else
+        {
+            $input_attrs[$dimExplodedElement[0]] = true;
+        }
+    }
+}
 $input = $this->el('input', $input_attrs);
 ?>
 
 <?php echo $el($props, $attrs) ?>
 <?php if(isset($props['label']) && !empty($props['label'])) : ?>
-    <label class="uk-form-label" for="input-<?php echo $attrs['data-id'] ?>"><?php echo $props['label'] ?></label>
+    <label class="uk-form-label rf-label" for="input-<?php echo $attrs['data-id'] ?>"><?php echo $props['label'] ?></label>
     <div class="uk-form-controls">
         <?php endif;?>
         <?php if ($props['icon']) : ?>

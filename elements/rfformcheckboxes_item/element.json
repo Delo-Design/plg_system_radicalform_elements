@@ -18,6 +18,11 @@
         "css_classes": {
             "label": "CSS classes",
             "type": "Text"
+        },
+        "checkbox_required": {
+            "label": "Required",
+            "type": "checkbox",
+            "text": "Set as required"
         }
     },
     "fieldset": {
@@ -26,10 +31,12 @@
             "fields": [
                 {
                     "title": "General",
+                    "type": "group",
                     "fields": [
                         "label",
                         "value",
-                        "css_classes"
+                        "css_classes",
+                        "checkbox_required"
                     ]
                 }
             ]

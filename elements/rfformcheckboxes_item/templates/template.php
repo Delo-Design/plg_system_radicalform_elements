@@ -1,3 +1,1 @@
-<label class="uk-flex"><div><input class="uk-checkbox <?php echo $props['css_classes'] ?>" type="checkbox" name="<?php echo $element['field_name'] ?>[]" value="<?php echo $props['value'] ?>"></div><div class="uk-margin-small-left"><?php echo $props['label'] ?></div></label>
-
-
+<label class="uk-flex uk-flex-middle"><input class="uk-checkbox rf-checkbox <?php echo $props['css_classes'] ?> <?php echo $props['checkbox_required']?"required":"" ?>" type="checkbox" name="<?php echo $element['field_name'] ?>[]" value="<?php echo $props['value'] ?>"><div class="uk-margin-small-left"><?php echo $props['label'] ?></div></label>

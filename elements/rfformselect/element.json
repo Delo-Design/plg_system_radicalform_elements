@@ -43,6 +43,12 @@
                 "Large": "uk-form-large"
             }
         },
+        "select_required": {
+            "label": "Required",
+            "type": "checkbox",
+            "text": "Set as required"
+        },
+        "attrs": "${builder.attrs}",
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
         "margin_remove_bottom": "${builder.margin_remove_bottom}",
@@ -83,7 +89,17 @@
                                 "label",
                                 "field_name",
                                 "multiple",
-                                "control_size"
+                                "control_size",
+                                "select_required"
+                            ]
+                        },
+                        {
+                            "label": "Attributes for input",
+                            "type": "grid",
+                            "width": "1-1",
+                            "divider": true,
+                            "fields": [
+                                "attrs"
                             ]
                         },
                         {

@@ -41,6 +41,11 @@
             "type": "checkbox",
             "text": "Set all radio buttons in one line."
         },
+        "radio_required": {
+            "label": "Required",
+            "type": "checkbox",
+            "text": "Set as required"
+        },
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
         "margin_remove_bottom": "${builder.margin_remove_bottom}",
@@ -51,7 +56,7 @@
         "attributes": "${builder.attrs}",
         "css": {
             "label": "CSS",
-            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.el-item</code>, <code>.el-title</code>, <code>.el-content</code>, <code>.el-image</code>, <code>.el-link</code>",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.rf-radio</code> <code>.el-element</code>, <code>.el-item</code>,  <code>.el-content</code>,  <code>.el-link</code>",
             "type": "editor",
             "editor": "code",
             "mode": "css",
@@ -80,7 +85,8 @@
                             "fields": [
                                 "label",
                                 "field_name",
-                                "linebreak"
+                                "linebreak",
+                                "radio_required"
                             ]
                         },
                         {

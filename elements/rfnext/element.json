@@ -1,6 +1,6 @@
 {
-    "name": "rfsubmit",
-    "title": "RF Submit",
+    "name": "rfnext",
+    "title": "RF Next",
     "group": "RadicalForm Elements",
     "icon": "${url:images/icon.svg}",
     "iconSmall": "${url:images/iconSmall.svg}",
@@ -13,9 +13,11 @@
     },
     "defaults": {
         "margin": "default",
-        "label":  "Submit",
-        "icon_align":  "left",
-        "button_style": "default"
+        "label":  "Next",
+        "icon_align":  "right",
+        "icon": "chevron-double-right",
+        "button_style": "default",
+        "step_class": ".rf-steps .uk-container > div:nth-child({step})"
     },
     "fields": {
         "label": {
@@ -62,11 +64,34 @@
                 "Large": "large"
             }
         },
-        "fullwidth": {
-            "type": "checkbox",
-            "text": "Full width button"
+        "animation_step": {
+            "label": "Animation",
+            "description": "Select the transformation origin for the Ken Burns animation.",
+            "type": "select",
+            "options": {
+                "None": "",
+                "Fade": "fade",
+                "Scale Up": "scale-up",
+                "Scale Down": "scale-down",
+                "Shake": "shake",
+                "Left": "slide-left",
+                "Top": "slide-top",
+                "Bottom": "slide-bottom",
+                "Right": "slide-right",
+                "Left Small": "slide-left-small",
+                "Top Small": "slide-top-small",
+                "Bottom Small": "slide-bottom-small",
+                "Right Small": "slide-right-small",
+                "Left Medium": "slide-left-medium",
+                "Top Medium": "slide-top-medium",
+                "Bottom Medium": "bottom-medium",
+                "Right Medium": "right-medium"
+            }
         },
-
+        "step_class": {
+            "label": "Step CSS class",
+            "type": "text"
+        },
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
         "margin_remove_bottom": "${builder.margin_remove_bottom}",
@@ -111,7 +136,16 @@
                                 "icon_align",
                                 "button_style",
                                 "button_size",
-                                "fullwidth"
+                                "animation_step"
+                            ]
+                        },
+                        {
+                            "label": "Classes",
+                            "type": "grid",
+                            "width": "1-1",
+                            "divider": true,
+                            "fields": [
+                                "step_class"
                             ]
                         },
                         {

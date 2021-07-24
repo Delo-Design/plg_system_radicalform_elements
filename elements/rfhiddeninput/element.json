@@ -19,7 +19,23 @@
         "inputvalue": {
             "label": "Input value",
             "type": "text"
+        },
+        "name": "${builder.name}",
+        "status": "${builder.status}",
+        "id": "${builder.id}",
+        "class": "${builder.cls}",
+        "attributes": "${builder.attrs}",
+        "css": {
+            "label": "CSS",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.rf-input</code>",
+            "type": "editor",
+            "editor": "code",
+            "mode": "css",
+            "attrs": {
+                "debounce": 500
+            }
         }
+
     },
     "fieldset": {
         "default": {
@@ -31,7 +47,8 @@
                         "inputname",
                         "inputvalue"
                     ]
-                }
+                },
+                "${builder.advanced}"
             ]
         }
     }
