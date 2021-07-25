@@ -2,7 +2,7 @@
 <extension version="3.8" type="plugin" method="upgrade" group="system">
 	<name>PLG_RFE_FORM</name>
 	<author>Tsymbal and Progreccor</author>
-	<creationDate>24.07.2021</creationDate>
+	<creationDate>25.07.2021</creationDate>
 	<copyright>Copyright (C) 2005 - 2021 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>boss@delo-design.ru</authorEmail>
@@ -26,7 +26,7 @@
 	</files>
 	<updateservers>
 		<server type="extension" priority="1" name="Radical Form Elements">
-			https://hika.su/update/free/plg_radicalform_elements.xml
+			https://hika.su/update/free/plg_system_radicalform_elements.xml
 		</server>
 	</updateservers>
 </extension>
