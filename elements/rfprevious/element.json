@@ -84,8 +84,8 @@
                 "Right Small": "slide-right-small",
                 "Left Medium": "slide-left-medium",
                 "Top Medium": "slide-top-medium",
-                "Bottom Medium": "bottom-medium",
-                "Right Medium": "right-medium"
+                "Bottom Medium": "slide-bottom-medium",
+                "Right Medium": "slide-right-medium"
             }
         },
 
