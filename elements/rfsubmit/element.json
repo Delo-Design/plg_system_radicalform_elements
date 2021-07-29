@@ -15,7 +15,8 @@
         "margin": "default",
         "label":  "Submit",
         "icon_align":  "left",
-        "button_style": "default"
+        "button_style": "default",
+        "js2": true
     },
     "fields": {
         "label": {
@@ -66,7 +67,26 @@
             "type": "checkbox",
             "text": "Full width button"
         },
-
+        "js0": {
+            "type": "checkbox",
+            "label": "Execute",
+            "text": "Javascript #0"
+        },
+        "js1": {
+            "type": "checkbox",
+            "label": "Execute",
+            "text": "Javascript #1"
+        },
+        "js2": {
+            "type": "checkbox",
+            "label": "Execute",
+            "text": "Javascript #2 (Default)"
+        },
+        "js3": {
+            "type": "checkbox",
+            "label": "Execute",
+            "text": "Javascript #3"
+        },
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
         "margin_remove_bottom": "${builder.margin_remove_bottom}",
@@ -112,6 +132,25 @@
                                 "button_style",
                                 "button_size",
                                 "fullwidth"
+
+                            ]
+                        },
+                        {
+                            "label": "Before submit",
+                            "type": "group",
+                            "divider": true,
+                            "fields": [
+                                "js0"
+                            ]
+                        },
+                        {
+                            "label": "After submit",
+                            "type": "group",
+                            "divider": true,
+                            "fields": [
+                                "js1",
+                                "js2",
+                                "js3"
                             ]
                         },
                         {

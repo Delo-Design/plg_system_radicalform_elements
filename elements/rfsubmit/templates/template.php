@@ -3,20 +3,52 @@
 //Wrap
 $wrap = $this->el('div');
 
+
+$rfCall="";
+if(!empty($props['js0']) && ($props['js0']))
+{
+    $rfCall="0";
+}
+if(!empty($props['js1']) && ($props['js1']))
+{
+    $rfCall.="1";
+}
+if(!empty($props['js2']) && ($props['js2']))
+{
+    $rfCall.="2";
+}
+if(!empty($props['js3']) && ($props['js3']))
+{
+    $rfCall.="3";
+}
 // Button
-$button = $this->el('button', [
+if ($rfCall=="2")
+{
+    $button = $this->el('button', [
 
-    'class' => $this->expr([
-        'el-content',
-        'rf-button-send',
-        'uk-width-1-1 {@fullwidth}',
-        'uk-{button_style: link-\w+}' => ['button_style' => $props['button_style']],
-        'uk-button uk-button-{!button_style: |link-\w+} [uk-button-{button_size}]' => ['button_style' => $props['button_style']],
-    ], $props),
+        'class' => $this->expr([
+            'el-content',
+            'rf-button-send',
+            'uk-width-1-1 {@fullwidth}',
+            'uk-{button_style: link-\w+}' => ['button_style' => $props['button_style']],
+            'uk-button uk-button-{!button_style: |link-\w+} [uk-button-{button_size}]' => ['button_style' => $props['button_style']],
+        ], $props)
+    ]);
+}
+else
+{
+    $button = $this->el('button', [
 
-    'title' => ['{label}'],
-
-]);
+        'class' => $this->expr([
+            'el-content',
+            'rf-button-send',
+            'uk-width-1-1 {@fullwidth}',
+            'uk-{button_style: link-\w+}' => ['button_style' => $props['button_style']],
+            'uk-button uk-button-{!button_style: |link-\w+} [uk-button-{button_size}]' => ['button_style' => $props['button_style']],
+        ], $props),
+        'data-rf-call' => $rfCall
+    ]);
+}
 
 ?>
 
