@@ -5,7 +5,7 @@ $wrap = $this->el('div');
 $currentNumber=explode("#",$id);
 $currentNumber=explode("-",$currentNumber[1]);
 $stepClass=str_replace("{step}",($currentNumber[1]+1),$props['step_class']);
-$stepClass2=str_replace("{step}",($currentNumber[1]+2),$props['step_class']);
+$stepClass2=str_replace("{step}",($currentNumber[1]),$props['step_class']);
 // Button
 $button = $this->el('button', [
 
