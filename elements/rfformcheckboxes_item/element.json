@@ -6,6 +6,9 @@
         "render": "./templates/template.php",
         "content": "./templates/content.php"
     },
+    "defaults": {
+        "value": "check"
+    },
     "fields": {
         "label": {
             "label": "Label",

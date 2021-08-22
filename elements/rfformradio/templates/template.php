@@ -31,7 +31,7 @@ else
 ?>
     <div class="<?= $class ?>>">
         <?php foreach ($children as $child) : ?>
-            <?= $builder->render($child, ['element' => $props]) ?>
+            <?= $builder->render($child, ['element' => $props, 'i' => $i]) ?>
             <?php $i++ ?>
         <?php endforeach ?>
     </div>
