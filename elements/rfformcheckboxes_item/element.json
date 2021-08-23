@@ -26,6 +26,11 @@
             "label": "Required",
             "type": "checkbox",
             "text": "Set as required"
+        },
+        "checkbox_checked": {
+            "label": "Checked",
+            "type": "checkbox",
+            "text": "Set as checked"
         }
     },
     "fieldset": {
@@ -39,7 +44,8 @@
                         "label",
                         "value",
                         "css_classes",
-                        "checkbox_required"
+                        "checkbox_required",
+                        "checkbox_checked"
                     ]
                 }
             ]
