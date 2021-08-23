@@ -14,6 +14,11 @@
         "value": {
             "label": "Value",
             "type": "Text"
+        },
+        "radio_checked": {
+            "label": "Checked",
+            "type": "checkbox",
+            "text": "Set as checked"
         }
     },
     "fieldset": {
@@ -24,9 +29,11 @@
                     "title": "General",
                     "fields": [
                         "label",
-                        "value"
+                        "value",
+                        "radio_checked"
                     ]
                 }
+
             ]
         }
     }
