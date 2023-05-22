@@ -12,7 +12,8 @@
         "content": "./templates/content.php"
     },
     "defaults": {
-        "margin": "default"
+        "margin": "default",
+        "linebreak_gap" : "small"
     },
     "placeholder": {
         "children": [
@@ -41,6 +42,19 @@
             "label": "Set to one line",
             "type": "checkbox",
             "text": "Set all checkboxes in one line."
+        },
+        "linebreak_gap": {
+            "label": "Line Gap modifiers",
+            "description": "Set the size of the gap between the grid columns.",
+            "type": "select",
+            "options": {
+                "Small": "small",
+                "Medium": "medium",
+                "Default": "",
+                "Large": "large",
+                "None": "collapse"
+            },
+            "enable": "linebreak"
         },
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
@@ -81,7 +95,8 @@
                             "fields": [
                                 "label",
                                 "field_name",
-                                "linebreak"
+                                "linebreak",
+                                "linebreak_gap"
                             ]
                         },
                         {
