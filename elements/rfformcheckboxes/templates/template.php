@@ -23,7 +23,8 @@ if(empty($props['field_name']))
 
 if(isset($props['linebreak']) && $props['linebreak'])
 {
-    $class="uk-grid uk-grid-small";
+    $class  = "uk-grid";
+    $class .= ($props['linebreak_gap'] != '') ? " uk-grid-" . $props['linebreak_gap'] : "";
 }
 else
 {
