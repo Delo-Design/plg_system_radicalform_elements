@@ -87,6 +87,23 @@
             "label": "Execute",
             "text": "Javascript #3"
         },
+        "button_id":{
+            "label": "ID button",
+            "description": "Create a unique identifier (ID) for the button."
+        },
+        "button_class":{
+            "label": "Class button",
+            "description": "Specify one or more CSS classes for the button. You can add multiple classes separated by spaces."
+        },                           
+        "button_attributes":{
+            "label": "Attributes button",
+            "description": "Define one or more attributes for the button. Separate the attribute name and value with the symbol <code>=</code> One attribute per line.",
+            "type": "editor",
+            "editor": "code",
+            "attrs": {
+                "debounce": 500
+            }
+        },
         "margin": "${builder.margin}",
         "margin_remove_top": "${builder.margin_remove_top}",
         "margin_remove_bottom": "${builder.margin_remove_bottom}",
@@ -132,7 +149,6 @@
                                 "button_style",
                                 "button_size",
                                 "fullwidth"
-
                             ]
                         },
                         {
@@ -153,6 +169,9 @@
                                 "js3"
                             ]
                         },
+                        "button_id",
+                        "button_class",
+                        "button_attributes",
                         {
                             "label": "General",
                             "type": "group",

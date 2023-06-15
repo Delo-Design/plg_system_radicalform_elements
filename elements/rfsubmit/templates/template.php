@@ -26,28 +26,35 @@ if ($rfCall=="2")
 {
     $button = $this->el('button', [
 
+        'id' => $this->expr(['{button_id}'], $props),
         'class' => $this->expr([
             'el-content',
             'rf-button-send',
             'uk-width-1-1 {@fullwidth}',
             'uk-{button_style: link-\w+}' => ['button_style' => $props['button_style']],
             'uk-button uk-button-{!button_style: |link-\w+} [uk-button-{button_size}]' => ['button_style' => $props['button_style']],
-        ], $props)
+            '{button_class}'
+        ], $props),
+        $this->expr(['{button_attributes}'], $props)
     ]);
 }
 else
 {
     $button = $this->el('button', [
 
+        'id' => $this->expr(['{button_id}'], $props),
         'class' => $this->expr([
             'el-content',
             'rf-button-send',
             'uk-width-1-1 {@fullwidth}',
             'uk-{button_style: link-\w+}' => ['button_style' => $props['button_style']],
             'uk-button uk-button-{!button_style: |link-\w+} [uk-button-{button_size}]' => ['button_style' => $props['button_style']],
+            '{class_button}'
         ], $props),
-        'data-rf-call' => $rfCall
+        'data-rf-call' => $rfCall,
+        $this->expr(['{button_attributes}'], $props)
     ]);
+    
 }
 
 ?>
