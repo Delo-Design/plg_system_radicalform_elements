@@ -28,7 +28,8 @@
                 "Text": "text",
                 "Email": "email",
                 "Phone": "tel",
-                "password": "password"
+                "Password": "password",
+                "Date": "date"
             }
         },
         "input_placeholder": {

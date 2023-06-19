@@ -2,7 +2,10 @@
 
 //Wrap
 $wrap = $this->el('div');
-
+if(!isset($id))
+{
+    $id=$node->attrs['data-id'] ;
+}
 // Button
 $button = $this->el('button', [
 

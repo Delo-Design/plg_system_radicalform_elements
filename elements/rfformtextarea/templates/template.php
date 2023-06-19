@@ -5,7 +5,10 @@ $el = $this->el('div', [
         'rf-textarea'
     ]
 ]);
-
+if(!isset($id))
+{
+    $id=$node->attrs['data-id'] ;
+}
 if(empty($props['field_name']))
 {
     $name="name".str_replace(["#","-","page"],"",$id);
@@ -23,7 +26,7 @@ else
     <?php endif;?>
             <textarea
                 <?php if(isset($props['label']) && !empty($props['label'])) : ?>
-                    id="texterea-<?php echo $attrs['data-id'] ?>"
+                    id="textarea-<?php echo $attrs['data-id'] ?>"
                 <?php endif;?>
                 class="uk-textarea <?php echo $props['inputcss'] ?>"
                 name="<?php echo $name ?>"

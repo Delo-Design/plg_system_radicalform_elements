@@ -1,5 +1,8 @@
 <?php
-
+if(!isset($id))
+{
+    $id=$node->attrs['data-id'] ;
+}
 if(empty($props['inputname']))
 {
     $name="name".str_replace(["#","-","page"],"",$id);

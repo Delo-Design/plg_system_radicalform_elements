@@ -1,6 +1,10 @@
 <?php
 
 $el = $this->el('div');
+if(!isset($id))
+{
+    $id=$node->attrs['data-id'] ;
+}
 if(empty($props['field_name']))
 {
     $props['field_name']="name".str_replace(["#","-","page"],"",$id);

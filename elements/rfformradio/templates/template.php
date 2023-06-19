@@ -5,7 +5,10 @@ $el = $this->el('div', [
         'rf-radio'
     ]
 ]);
-
+if(!isset($id))
+{
+    $id=$node->attrs['data-id'] ;
+}
 $count = count($children);
 $i = 1;
 
