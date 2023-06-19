@@ -2,7 +2,7 @@
 <extension version="3.8" type="plugin" method="upgrade" group="system">
 	<name>PLG_RFE_FORM</name>
 	<author>Tsymbal and Progreccor</author>
-	<creationDate>19.07.2023</creationDate>
+	<creationDate>19.06.2023</creationDate>
 	<copyright>Copyright © 2021 Delo Design. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>boss@delo-design.ru</authorEmail>
