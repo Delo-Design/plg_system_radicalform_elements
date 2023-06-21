@@ -17,7 +17,7 @@
         "icon_align":  "right",
         "icon": "chevron-double-right",
         "button_style": "default",
-        "step_class": ".rf-steps > .uk-container > div:nth-child({step})"
+        "step_class": ".rf-steps > .uk-container > div"
     },
     "fields": {
         "label": {

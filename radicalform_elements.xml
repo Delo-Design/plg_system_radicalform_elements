@@ -2,12 +2,12 @@
 <extension version="3.8" type="plugin" method="upgrade" group="system">
 	<name>PLG_RFE_FORM</name>
 	<author>Tsymbal and Progreccor</author>
-	<creationDate>19.07.2023</creationDate>
+	<creationDate>20.06.2023</creationDate>
 	<copyright>Copyright © 2021 Delo Design. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>boss@delo-design.ru</authorEmail>
 	<authorUrl>https://delo-design.ru</authorUrl>
-	<version>1.3.0</version>
+	<version>1.3.1</version>
 	<description>PLG_RFE_FORM_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 
